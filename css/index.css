@@ -1,0 +1,114 @@
+/*  My Custom Styles  */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+img {
+	display: block;
+	max-width: 100%;
+}
+ul, ol {
+	list-style-type: none;
+}
+/*  custom properties
+-----------------------------------------------------------------------  */
+:root {
+	--ff-primary: 'Oxygen', sans-serif;
+
+	--fs-body: 16px;
+
+	--fw-reg: 100;
+	--fw-med: 300;
+	--fw-bold: 600;
+
+/*	### Primary */
+	--clr-cyan: hsl(178, 100%, 50%);
+	--clr-soft-blue: hsl(215, 51%, 70%);
+/*	### Neutral */
+	--clr-blue-main-bg: hsl(217, 54%, 11%);
+	--clr-blue-card-bg: hsl(216, 50%, 16%);
+	--clr-blue-line: hsl(215, 32%, 27%);
+	--clr-white: hsl(0, 0%, 100%);
+}
+html {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+body {
+	min-height: 100vh;
+	max-width: 100%;
+	line-height: 1.6;
+	font-family: var(--ff-primary);
+	padding: 0;
+	margin: 0;
+}
+h1 {
+	font-size: 2.5rem;
+}
+main {
+	height: 100vh;
+	background-color: rgba(5, 5, 5, 0.9);
+	padding: 10vh 1rem;
+	border: 1px solid black;
+}
+section.card {
+	min-height: 50vh;
+	max-width: 350px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	/* fallback for old browsers */
+	background: #83a4d4;  
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-linear-gradient(to bottom, #b6fbff, #83a4d4);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to bottom, #b6fbff, #83a4d4); 
+	padding-top: 2rem;
+	border-radius: 1rem;
+	margin: 0 auto;
+	box-shadow: 2px 2px 6px rgba(255, 255, 255, 0.9);
+}
+.card h1 {
+	padding-bottom: 2rem;
+}
+.wrapper {
+	min-height: 120px;
+	width: 80%;
+	text-align: center;
+	background-color: azure;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+	padding: 1rem;
+	border: 1px solid purple;
+	border-radius: 0.5rem;
+	margin-bottom: 2rem;
+}
+button {
+	background-color: red;
+	padding: 3rem;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+	border-radius: 50%;
+	border: 1px solid black;
+	margin: 2rem;
+}
+button:hover {
+	cursor: pointer;
+}
+.grow { 
+	transition: all .2s ease-in-out; 
+}
+.grow:hover { 
+	transform: scale(1.1); 
+}
+.bg-color {
+	background-color:palegreen;
+}

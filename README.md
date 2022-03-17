@@ -1,4 +1,4 @@
-# BoredBot
+# Fetch-API
 Exercise in using API's
 
 This application reads an API and displays the content when the button is selected.
